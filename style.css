@@ -1,0 +1,35 @@
+@font-face {
+  font-family: vazirmatn;
+  src: url(font/vazir-font/Vazir-Medium.eot) format("eot");
+  font-weight: 400;
+  font-display: swap;
+}
+
+* {
+  font-family: "vazirmatn", Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+      min-height: 100vh;
+
+  margin: 0;
+  padding: 0;
+  background:
+    linear-gradient(to bottom, #5f4ada, #4c95da, #4cbcd6);
+  /* radial-gradient(circle at 12% -30%, blueviolet 5%, #fff 30%, transparent 50%), */
+}
+
+
+
+
+.container {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%); /* Same for Safari browsers */
+  background-color: rgba(255, 255, 255, 0.4);/* Semi-transparent white */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Light transparent border */
+  border-radius: 12px;
+  width: 25rem;
+  height: 40rem;
+  margin: 25px auto;
+}
