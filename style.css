@@ -11,13 +11,40 @@
 }
 
 html {
-      min-height: 100vh;
+  min-height: 100vh;
 
   margin: 0;
   padding: 0;
   background:
-    linear-gradient(to bottom, #5f4ada, #4c95da, #4cbcd6);
+    linear-gradient(120deg, #5f4ada, #4c95da, #4cbcd6);
   /* radial-gradient(circle at 12% -30%, blueviolet 5%, #fff 30%, transparent 50%), */
+  animation: gradientAnimation 10s infinite ease;
+  background-size: 150% 150%;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+    filter: hue-rotate(0deg);
+  }
+
+  25% {
+    filter: hue-rotate(-30deg);
+  }
+
+  50% {
+    background-position: 50% 100%;
+    filter: hue-rotate(0deg);
+  }
+
+  75% {
+    filter: hue-rotate(30deg); 
+  }
+
+  100% {
+    background-position: 0% 50%;
+    filter: hue-rotate(0deg);
+  }
 }
 
 
@@ -25,9 +52,12 @@ html {
 
 .container {
   backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%); /* Same for Safari browsers */
-  background-color: rgba(255, 255, 255, 0.4);/* Semi-transparent white */
-  border: 1px solid rgba(255, 255, 255, 0.3); /* Light transparent border */
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  /* Same for Safari browsers */
+  background-color: rgba(255, 255, 255, 0.4);
+  /* Semi-transparent white */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  /* Light transparent border */
   border-radius: 12px;
   width: 25rem;
   height: 40rem;
