@@ -9,8 +9,25 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="shearch-box">
+    <input type="text" placeholder="اسم شهر را وارد کنید" class="cityInput">
+    <button class="getWeather">
+      محاسبه آب و هوا
+    </button>
   </div>
+
+  <div class="container" style="display: none;">
+    <form class="weatherForm">
+
+    </form>
+    <h1 class="cityDisplay">ahvaz</h1>
+    <p class="tempoDisplay">21°C</p>
+    <p class="humidityDisplay">Humidy : 75%</p>
+    <p class="descriptionDisplay">Raniy</p>
+    <p class="iconDisplay">🌧</p>
+    <p class="errorDisplay">Pleas enter a city</p>
+  </div>
+
   <script defer src="script.js"></script>
 </body>
 
